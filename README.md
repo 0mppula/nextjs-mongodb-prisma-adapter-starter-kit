@@ -21,8 +21,8 @@ This application is a Next.js 14 starter kit for authentication, featuring NextA
 
 -   Node.js version 18.18 or higher
 -   MongoDB database
--   **Google Provider**: [Google Cloud](https://console.cloud.google.com/) project with an OAuth consent screen created.
--   **GitHub Provider**: GitHub [OAuth App](https://github.com/settings/developers)
+-   Google Provider: [Google Cloud](https://console.cloud.google.com/) project with an OAuth consent screen created.
+-   GitHub Provider: GitHub [OAuth App](https://github.com/settings/developers)
 
 ### Cloning the repository
 
