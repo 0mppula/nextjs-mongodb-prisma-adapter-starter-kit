@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextjs Mongodb Prisma Adapter Starter Kit
 
-## Getting Started
+<div>
+    <a href="https://www.omarkraidie.com/projects">
+        <img src="https://img.shields.io/badge/✨%20portfolio-1b1b1b?style=for-the-badge" />
+    </a>
+    <a href="https://www.linkedin.com/in/omarkraidie/">
+        <img src="https://img.shields.io/badge/LinkedIn-%230073b1?style=for-the-badge&logo=linkedin&logoColor=white" />
+    </a>
+</div>
 
-First, run the development server:
+## Nextjs Mongodb Prisma Adapter Starter Kit?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This application is a Next.js 14 starter kit for authentication, featuring NextAuth, Prisma Adapter, and MongoDB. It utilizes TypeScript, React, and Shadcn-UI, with styling provided by Tailwind CSS. Additionally, the starter kit includes protected routes, theme toggling, and a user account nav in the nav bar. Follow the instructions below to quickly get started with this repository and begin developing your app. If you find this project helpful, please consider starring ⭐ this repository!
+
+---
+
+## How to Set Up the Project Locally
+
+### Prerequisites
+
+-   Node.js version 18.18 or higher
+-   MongoDB database
+-   **Google Provider**: [Google Cloud](https://console.cloud.google.com/) project with an OAuth consent screen created.
+-   **GitHub Provider**: GitHub [OAuth App](https://github.com/settings/developers)
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/0mppula/nextjs-mongodb-prisma-adapter-starter-kit.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### `.env` File Configuration
 
-## Learn More
+In the root of the project create an `.env` file and declare the following variables:
 
-To learn more about Next.js, take a look at the following resources:
+```ts
+DATABASE_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+NEXTAUTH_SECRET=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Populate the variables with the corresponding data.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Setup Prisma
 
-## Deploy on Vercel
+```shell
+npx prisma db push
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Start the app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+npm run dev
+```
+
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command | description                                                                                      |
+| :------ | :----------------------------------------------------------------------------------------------- |
+| `dev`   | Starts a development instance of the app                                                         |
+| `lint`  | Runs ESLint to check for errors and warnings. Errors will fail the build, but warnings will not. |
+
+---
+
+## Tech Stack
+
+### Technologies
+
+-   **Next.js**: A React framework enabling server-side rendering and static site generation for high-performance web applications.
+-   **Tailwind CSS**: A utility-first CSS framework for rapidly creating custom designs directly in your markup.
+-   **MongoDB**: MongoDB is an open-source NoSQL database that stores data in flexible, JSON-like documents, allowing for scalable, high-performance data management and real-time data processing.
+-   **Prisma**: A next-generation ORM for Node.js and TypeScript that simplifies database access and management with an intuitive query API.
+-   **NextAuth**: A complete open-source authentication solution for Next.js applications.
+-   **Shadcn**: Different component/UI libraries used for design
+
+### Framework
+
+-   **Front-end Framework:** Next.js (v13.4.12)
+
+### UI
+
+-   **UI Library:** shadcn-ui
+-   **UI Styling:** tailwindcss (v3.4.1) with tailwindcss-animate (v1.0.7)
+-   **Theming:** next-themes (v0.3.0)
+-   **Icons:** react-icons (v5.3.0) & lucide-react (v0.434.0)
+-   **CSS Utility:** clsx (v2.1.1)
+-   **Class Variance Management:** class-variance-authority (v0.7.0)
+
+### Backend & Authentication
+
+-   **Prisma ORM:** @prisma/client (v5.18.0) with prisma (v5.18.0) as a dev dependency
+-   **User Authentication:** next-auth (v4.24.7) with prisma-adapter (v1.0.7)
+-   **TypeScript:** (v^5)
+-   **Type Definitions:** @types/node (v^20), @types/react (^18), @types/react-dom (v^18)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
