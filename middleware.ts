@@ -2,10 +2,9 @@ import { getToken } from 'next-auth/jwt';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
-const sensitiveRoutes = ['/welcome'];
-const publicRoutes = ['/'];
-
 export async function middleware(request: NextRequest) {
+	const sensitiveRoutes = ['/welcome'];
+	const publicRoutes = ['/'];
 	const pathname = request.nextUrl.pathname;
 
 	const token = await getToken({ req: request });
@@ -25,5 +24,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-	matcher: [...publicRoutes, ...sensitiveRoutes],
+	matcher: ['/', '/welcome'],
 };
