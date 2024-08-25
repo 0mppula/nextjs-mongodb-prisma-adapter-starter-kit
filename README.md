@@ -95,9 +95,17 @@ Populate the variables with the corresponding data.
 
 ### Setup Prisma
 
-```shell
-npx prisma db push
-```
+1. Push the changes from the Prisma schema to the database
+
+    ```shell
+    npx prisma db push
+    ```
+
+2. Generate Prisma Client for type safety across the app.
+
+    ```shell
+    npx prisma generate
+    ```
 
 ### Start the app
 
