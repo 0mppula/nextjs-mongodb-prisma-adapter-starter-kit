@@ -10,8 +10,6 @@ export async function middleware(request: NextRequest) {
 	const token = await getToken({ req: request });
 	const isAuth = !!token;
 
-	console.log('middleware', { pathname, isAuth, token });
-
 	// Dont allow access to public routes if user is authenticated
 	if (isAuth && publicRoutes.some((route) => route === pathname)) {
 		return NextResponse.redirect(new URL('/welcome', request.url));
