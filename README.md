@@ -26,42 +26,57 @@ This application is a Next.js 14 starter kit for authentication, featuring NextA
 
 ### Cloning the repository
 
-```shell
-git clone https://github.com/0mppula/nextjs-mongodb-prisma-adapter-starter-kit.git
-```
+1. Clone the repository into a new directory.
 
-### Clone and rename the project as your own
+    ```shell
+    git clone https://github.com/0mppula/nextjs-mongodb-prisma-adapter-starter-kit.git
+    ```
 
-```shell
-git clone https://github.com/0mppula/nextjs-mongodb-prisma-adapter-starter-kit.git <new-repo-name>
-```
+2. Install the required dependencies
 
-```shell
-cd <new-repo-name>
-```
+    ```shell
+    npm i
+    ```
 
-```shell
-rm -rf .git
-```
+### Clone and rename the repository as your own
 
-```shell
-git init
-```
+1. Clone the repository into a new directory.
 
-Add the `<new-repo-name>` to your `package.json` files top level `name` before installing node modules.
+    ```shell
+    git clone https://github.com/0mppula/nextjs-mongodb-prisma-adapter-starter-kit.git <new-repo-name>
+    ```
 
-```json
-{
-    "name": <new-repo-name>,
-    ...
-}
-```
+2. Navigate into the new directory.
 
-### Install packages
+    ```shell
+    cd <new-repo-name>
+    ```
 
-```shell
-npm i
-```
+3. Remove the existing Git history.
+
+    ```shell
+    rm -rf .git
+    ```
+
+4. Initialize a new Git repository.
+
+    ```shell
+    git init
+    ```
+
+5. Add the `<new-repo-name>` to your `package.json` files top level `name` before installing node modules.
+
+    ```json
+    {
+    	"name": "new-repo-name"
+    }
+    ```
+
+6. Install the required dependencies
+
+    ```shell
+    npm i
+    ```
 
 ### `.env` File Configuration
 
