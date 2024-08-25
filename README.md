@@ -30,6 +30,33 @@ This application is a Next.js 14 starter kit for authentication, featuring NextA
 git clone https://github.com/0mppula/nextjs-mongodb-prisma-adapter-starter-kit.git
 ```
 
+### Clone and rename the project as your own
+
+```shell
+git clone https://github.com/0mppula/nextjs-mongodb-prisma-adapter-starter-kit.git <new-repo-name>
+```
+
+```shell
+cd <new-repo-name>
+```
+
+```shell
+rm -rf .git
+```
+
+```shell
+git init
+```
+
+Add the `<new-repo-name>` to your `package.json` files top level `name` before installing node modules.
+
+```json
+{
+    "name": <new-repo-name>,
+    ...
+}
+```
+
 ### Install packages
 
 ```shell
